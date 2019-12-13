@@ -90,8 +90,8 @@ function apiAxios(method, url, params, success, failure) {
     })
     .catch(function (err) {
       if (err) {
+        v.$message.error('发生错误！');
         console.log(err)
-        v.$message.error('api error, HTTP CODE: ' + err.response.status);
       }
     })
 }
